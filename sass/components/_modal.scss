@@ -1,0 +1,218 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    & > .modal {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+.modal__form {
+  width: 100%;
+}
+.modal__title {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+.modal__list {
+  position: relative;
+  margin-bottom: 10px;
+  &:hover .modal__input,
+  &:focus .modal__input {
+    border: 1px solid var(--accent-color);
+  }
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: var(--accent-color);
+  }
+}
+.modal__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+.modal__box {
+  position: relative;
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 12px 11px 45px;
+
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus + .modal__icon,
+  &:hover + .modal__icon {
+    fill: var(--accent-color);
+  }
+}
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  right: 95%;
+  transform: translate(50%, -50%);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__feedback {
+  margin-bottom: 20px;
+}
+.modal__text {
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 0;
+
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  resize: none;
+}
+.form__box {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.form__label {
+  align-items: center;
+  text-align: center;
+}
+.form__icon {
+  box-sizing: content-box;
+  margin: 0;
+  margin-left: 12px;
+  margin-right: 7px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform: translateY(3px);
+}
+.form__input {
+  position: absolute;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &:focus + .form__icon,
+  &:checked + .form__icon {
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+  }
+  &:hover + .form__icon {
+    cursor: pointer;
+  }
+}
+.check-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.modal-link {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--accent-color);
+}
+.form__button {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,67 @@
+.team {
+  background-color: var(--bcg-color);
+}
+.persons {
+  display: flex;
+  gap: 30px;
+}
+.persons__item {
+  /* width: 270px; */
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+  /* outline: 2px solid teal; */
+}
+.persons__box {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.persons__title {
+  font-weight: 500;
+}
+.persons__title,
+.persons__text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.social__list {
+  display: flex;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  margin-left: 32px;
+}
+.social__item + .social__item {
+  margin-left: 10px;
+}
+.social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--fill-icons);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+  }
+}

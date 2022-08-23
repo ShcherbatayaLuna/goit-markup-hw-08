@@ -1,0 +1,56 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid red; */
+}
+.list {
+  list-style: none;
+
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  margin: 0;
+}
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.features__title,
+.title,
+.persons__title {
+  color: var(--title-text-color);
+}

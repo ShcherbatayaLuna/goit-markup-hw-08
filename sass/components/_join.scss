@@ -1,0 +1,19 @@
+.join__box {
+  width: 206px;
+  height: 80px;
+  margin-top: 12px;
+}
+.join__title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.join__list {
+  display: flex;
+}
+.join__link {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
