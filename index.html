@@ -15,25 +15,6 @@
         <a class="logo" href="#" lang="en"
           >Web<span class="header__logo" lang="en">Studio</span></a
         >
-
-        <div class="mobile-menu__box">
-          <button
-          type="button"
-          class="mobile-menu__btn js-open-menu"
-          aria-controls="mobile-menu__container"
-        >
-          <svg width="40" height="40" aria-label="Перемикач меню" >
-            <use
-              class="mobile-menu__icon--open"
-              href="./images/icons.svg#icon-menu_40px"
-            ></use>
-            <use
-              class="mobile-menu__icon--close js-close-menu"
-              href="./images/icons.svg#icon-close_40px"
-            ></use>
-          </svg>
-        </button>
-
         <div
           class="mobile-menu__container js-menu-container"
           id="mobile-menu__container"
@@ -94,6 +75,22 @@
           </ul>
           </div>
         </div>
+        <button
+          type="button"
+          class="mobile-menu__btn "
+          aria-controls="mobile-menu__container"
+        >
+          <svg width="40" height="40" aria-label="Перемикач меню" >
+            <use
+              class="mobile-menu__icon--open js-open-menu"
+              href="./images/icons.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="mobile-menu__icon--close js-close-menu"
+              href="./images/icons.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
         </div>
       </div>
     </header>
@@ -675,14 +672,14 @@
                 type="email"
                 name="mail"
                 id="user_email"
-                placeholder=" "
+                placeholder="E-mail"
               />
               <label
                 class="sub__label"
                 for="user_email"
                 type="email"
                 name="mail"
-                >E-mail</label
+                ></label
               >
             </div>
             <button class="button" type="submit">

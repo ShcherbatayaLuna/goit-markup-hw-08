@@ -15,90 +15,82 @@
         <a class="logo" href="#" lang="en"
           >Web<span class="header__logo" lang="en">Studio</span></a
         >
-        <div>
-          <button
-            type="button"
-            class="mobile-menu__btn js-open-menu"
-            aria-controls="mobile-menu__container"
-          >
-            <svg width="40" height="40" aria-label="Перемикач меню">
-              <use
-                class="mobile-menu__icon--open"
-                href="./images/icons.svg#icon-menu_40px"
-              ></use>
-              <use
-                class="mobile-menu__icon--close js-close-menu"
-                href="./images/icons.svg#icon-close_40px"
-              ></use>
-            </svg>
-          </button>
+        <div
+          class="mobile-menu__container js-menu-container"
+          id="mobile-menu__container"
+        >
+          <!-- Навигация страницы -->
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">
+                  Студія
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--active"> Портфоліо </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link"> Контакти </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__list">
+            <!-- Контакты -->
+          <ul class="list contacts">
+            <li class="contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts__link"
+                lang="en"
+              >
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-letter"></use></svg
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link contacts__link--focused">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
 
-          <div
-            class="mobile-menu__container js-menu-container"
-            id="mobile-menu__container"
-          >
-            <!-- Навигация страницы -->
-            <nav class="nav">
-              <ul class="nav__list list">
-                <li class="nav__item">
-                  <a href="./index.html" class="nav__link"> Студія </a>
-                </li>
-                <li class="nav__item">
-                  <a
-                    href="./portfolio.html"
-                    class="nav__link nav__link--active"
-                  >
-                    Портфоліо
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="" class="nav__link"> Контакти </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="mobile-menu__list">
-              <!-- Контакты -->
-              <ul class="list contacts">
-                <li class="contacts__item">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="contacts__link"
-                    lang="en"
-                  >
-                    <svg class="contacts__icon" width="16" height="12">
-                      <use href="./images/icons.svg#icon-letter"></use></svg
-                    >info@devstudio.com
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <a
-                    href="tel:+380961111111"
-                    class="contacts__link contacts__link--focused"
-                  >
-                    <svg class="contacts__icon" width="10" height="16">
-                      <use href="./images/icons.svg#icon-smartphone"></use></svg
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-
-              <!-- Соц. сети -->
-              <ul class="list social-network">
-                <li class="social-network__item">
-                  <a class="social-network__link" href="">Instagram</a>
-                </li>
-                <li class="social-network__item">
-                  <a class="social-network__link" href="">Twitter</a>
-                </li>
-                <li class="social-network__item">
-                  <a class="social-network__link" href="">Facebook</a>
-                </li>
-                <li class="social-network__item">
-                  <a class="social-network__link" href="">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
+          <!-- Соц. сети -->
+          <ul class="list social-network">
+            <li class="social-network__item">
+              <a class="social-network__link" href="">Instagram</a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="">Twitter</a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="">Facebook</a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="">LinkedIn</a>
+            </li>
+          </ul>
           </div>
+        </div>
+        <button
+          type="button"
+          class="mobile-menu__btn "
+          aria-controls="mobile-menu__container"
+        >
+          <svg width="40" height="40" aria-label="Перемикач меню" >
+            <use
+              class="mobile-menu__icon--open js-open-menu"
+              href="./images/icons.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="mobile-menu__icon--close js-close-menu"
+              href="./images/icons.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
         </div>
       </div>
     </header>
@@ -137,9 +129,17 @@
                     <img
                       class="portfolio__img"
                       srcset="
-                        ./images/web-450.jpg 450w,
-                        ./images/web-370.jpg 370w,
-                        ./images/web-354.jpg 354w
+                      ./images/web-370.jpg 1x,
+                        ./images/web-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/web-354.jpg 1x,
+                        ./images/web-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/web-450.jpg 1x,
+                        ./images/web-mob@2x.jpg 2x
                       "
                       src="./images/web.jpg"
                       alt="Веб-сайт на мониторе"
@@ -165,9 +165,17 @@
                     <img
                       class="portfolio__img"
                       srcset="
-                        ./images/design-450.jpg 450w,
-                        ./images/design-370.jpg 370w,
-                        ./images/design-354.jpg 354w
+                      ./images/design-370.jpg 1x,
+                        ./images/design-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/design-354.jpg 1x,
+                        ./images/design-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/design-450.jpg 1x,
+                        ./images/design-mob@2x.jpg 2x
                       "
                       src="./images/design.jpg"
                       alt="Два баскетболиста с мячом"
@@ -194,6 +202,19 @@
                   <div class="card__box">
                     <img
                       class="portfolio__img"
+                      srcset="
+                      ./images/seafood-370.jpg 1x,
+                        ./images/seafood-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/seafood-354.jpg 1x,
+                        ./images/seafood-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/seafood-450.jpg 1x,
+                        ./images/seafood-mob@2x.jpg 2x
+                      "
                       src="./images/seafood.jpg"
                       alt="Логотип ресторана"
                     />
@@ -220,9 +241,17 @@
                     <img
                       class="portfolio__img"
                       srcset="
-                        ./images/headphones-450.jpg 450w,
-                        ./images/headphones-370.jpg 370w,
-                        ./images/headphones-354.jpg 354w
+                      ./images/headphones-370.jpg 1x,
+                        ./images/headphones-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/headphones-354.jpg 1x,
+                        ./images/headphones-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/headphones-450.jpg 1x,
+                        ./images/headphones-mob@2x.jpg 2x
                       "
                       src="./images/headphones.jpg"
                       alt="Наушники"
@@ -249,6 +278,19 @@
                   <div class="card__box">
                     <img
                       class="portfolio__img"
+                      srcset="
+                      ./images/boxes-370.jpg 1x,
+                        ./images/boxes-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/boxes-354.jpg 1x,
+                        ./images/boxes-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/boxes-450.jpg 1x,
+                        ./images/boxes-mob@2x.jpg 2x
+                      "
                       src="./images/boxes.jpg"
                       alt="Два картонных короба"
                     />
@@ -275,9 +317,17 @@
                     <img
                       class="portfolio__img"
                       srcset="
-                        ./images/site-450.jpg 450w,
-                        ./images/site-370.jpg 370w,
-                        ./images/site-354.jpg 354w
+                      ./images/site-370.jpg 1x,
+                        ./images/site-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/site-354.jpg 1x,
+                        ./images/site-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/site-450.jpg 1x,
+                        ./images/site-mob@2x.jpg 2x
                       "
                       src="./images/site.jpg"
                       alt="Веб-сайт на мониторе"
@@ -303,6 +353,20 @@
                 <a href="" class="link card__link">
                   <div class="card__box">
                     <img
+                    class="portfolio__img"
+                    srcset="
+                      ./images/magazine-370.jpg 1x,
+                        ./images/magazine-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/magazine-354.jpg 1x,
+                        ./images/magazine-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/magazine-450.jpg 1x,
+                        ./images/magazine-mob@2x.jpg 2x
+                      "
                       src="./images/magazine.jpg"
                       alt="Открытый журнал со статьей"
                     />
@@ -359,9 +423,17 @@
                     <img
                       class="portfolio__img"
                       srcset="
-                        ./images/app-450.jpg 450w,
-                        ./images/app-370.jpg 370w,
-                        ./images/app-354.jpg 354w
+                      ./images/app-370.jpg 1x,
+                        ./images/app-desktop@2x.jpg 2x
+                        
+                      "
+                      srcset="
+                      ./images/app-354.jpg 1x,
+                        ./images/app-tab.jpg 2x
+                      "
+                      srcset="
+                        ./images/app-450.jpg 1x,
+                        ./images/app-mob@2x.jpg 2x
                       "
                       src="./images/app.jpg"
                       alt="На ноутбуке открыт сайт"
@@ -390,13 +462,14 @@
     <!-- Подвал -->
     <footer class="footer">
       <div class="container footer__box">
+        
         <div class="footer__address">
           <div class="address__box">
             <!-- Логотип -->
             <a class="logo" href="#" lang="en"
               >Web<span class="footer__logo" lang="en">Studio</span></a
             >
-
+  
             <!-- Адресса -->
             <address class="address">
               <ul class="list address__list">
@@ -485,14 +558,14 @@
                 type="email"
                 name="mail"
                 id="user_email"
-                placeholder=" "
+                placeholder="E-mail"
               />
               <label
                 class="sub__label"
                 for="user_email"
                 type="email"
                 name="mail"
-                >E-mail</label
+                ></label
               >
             </div>
             <button class="button" type="submit">

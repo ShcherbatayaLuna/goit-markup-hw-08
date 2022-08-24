@@ -1,11 +1,18 @@
 .features {
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 .title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .features__title {
   @media screen and (max-width: 767px) {
@@ -43,13 +50,13 @@
   height: 70px;
 }
 .features__box {
-  width: 100%;
+  max-width: 450px;
   height: 120px;
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
   }
 
   margin-bottom: 30px;
