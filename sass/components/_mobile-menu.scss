@@ -17,14 +17,14 @@
     display: none;
   }
 }
-.js-close-menu {
+.mobile-menu__icon--close {
   display: none;
 }
 .js-menu-container.is-open ~ .mobile-menu__btn {
-  & .js-close-menu {
+  & .mobile-menu__icon--close {
     display: block;
   }
-  & .js-open-menu {
+  & .mobile-menu__icon--open {
     display: none;
   }
 }
