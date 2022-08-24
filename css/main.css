@@ -359,6 +359,11 @@ p {
   line-height: 1.17;
   text-decoration: none;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
@@ -430,7 +435,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .nav {
-    margin-right: 96px;
+    margin-right: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
