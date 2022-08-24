@@ -1,12 +1,18 @@
 .join__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 206px;
   height: 80px;
   margin-top: 12px;
+  margin-bottom: 60px;
 }
 .join__title {
   margin-bottom: 20px;
 
   font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }

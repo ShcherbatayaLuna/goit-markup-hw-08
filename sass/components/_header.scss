@@ -1,7 +1,9 @@
 .header {
-    border-bottom: 1px solid #ececec;
-  }
-  .header-page {
-    display: flex;
-    align-items: center;
-  }
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+.header-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
