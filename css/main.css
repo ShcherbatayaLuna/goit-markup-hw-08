@@ -421,6 +421,7 @@ p {
     padding: 48px 40px;
   }
   .mobile-menu__container.is-open {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -747,12 +748,17 @@ p {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-  max-width: 450px;
+  width: 450px;
   min-height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

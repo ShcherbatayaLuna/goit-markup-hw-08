@@ -43,6 +43,7 @@
     padding: 48px 40px;
 
     &.is-open {
+      position: fixed;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
