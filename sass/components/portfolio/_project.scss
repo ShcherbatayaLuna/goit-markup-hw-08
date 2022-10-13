@@ -86,6 +86,10 @@
   color: var(--white-color);
 }
 .description__box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
