@@ -5,6 +5,7 @@
 }
 .project__item {
   width: 100%;
+  border: 1px solid #eeeeee;
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -45,6 +46,7 @@
   }
 }
 .portfolio__img {
+  display: block;
   width: 100%;
 
   @media screen and (min-width: 768px) {
@@ -86,13 +88,7 @@
   color: var(--white-color);
 }
 .description__box {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 .description__title {
   margin-bottom: 4px;
